@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    font-family: sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem;
+    min-height: 100vh;
+}
+.title{
+    /* width: 200px; */
+    box-shadow: 0px 0px 10px gray;
+    padding: 20rem;
+    width: 305rem;
+    border-radius: 5px;
+}
+h1{
+    text-align: center;
+    color: black;
+    font-size: 25px;
+}
+.contentbox{
+    width:100%;
+    position: relative;
+}
+.contentbox .label{
+    position: relative;
+    color: white;
+    height: 45rem;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: none;
+    margin: 5px 0 3px 0;
+    border-radius: 5px;
+}
+
+.p{
+    position: absolute;
+    top: 31%;
+    left: 44%;
+    align-items: center;
+    justify-content: center;
+}
+.contentbox .label::before{
+    content: '+';
+    position: absolute;
+    top:50%;
+    right: 5%;
+    transform: translateY((-50%));
+    font-size: 1.5em;
+}
+.contentbox.active .label::before{
+    content: '-';
+}
+.contentbox .content{
+    position: relative;
+    background: white;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: 5px;
+}
+.contentbox.active .content{
+    height: 90px;
+    padding: 10px;
+}
+
+
+/* input box */
+.link{
+    width: 99%;
+    height: 45px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    border: 2px solid ;
+    border-radius: 5px ;
+}
+
+/* Dowload section (accordion) */
+.contentbox{
+    width: 100%;
+    position:relative;
+}
+.contentbox .label{
+    position: relative;
+    color: white;
+    height: 45px;
+    outline: none;
+    
+
+}
